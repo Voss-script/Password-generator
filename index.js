@@ -11,10 +11,8 @@ function generate(){
     containerOne.textContent += characters[Math.floor(Math.random() * characters.length )]
     containerTwo.textContent += characters[Math.floor(Math.random() * characters.length )]
     
-    while ( length > containerOne.textContent.length){
+    while ( length > containerOne.textContent.length && containerTwo.textContent.length){
         containerOne.textContent += characters[Math.floor(Math.random() * characters.length )]
-    } 
-    while ( length > containerTwo.textContent.length){
         containerTwo.textContent += characters[Math.floor(Math.random() * characters.length )]
     }
 }
