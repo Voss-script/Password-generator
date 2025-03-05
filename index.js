@@ -9,11 +9,14 @@ const length = 15
 
 function generate(){
     let password = ""
+    let passwordTwo = ""
     password += characters[Math.floor(Math.random() * characters.length )]
+    passwordTwo += characters[Math.floor(Math.random() * characters.length )]
     
     while ( password.length < length ){
         password += characters[Math.floor(Math.random() * characters.length )]
+        passwordTwo += characters[Math.floor(Math.random() * characters.length )]
     }
     containerOne.textContent = password
-    containerTwo. textContent = password
+    containerTwo. textContent = passwordTwo
 }
